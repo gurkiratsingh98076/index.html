@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cards</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #e2e2e2 0%, #ffffff 100%);
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            padding: 20px;
+            font-size: 24px; /* Adjusted font size for emojis */
+            font-weight: 600;
+            background: linear-gradient(135deg, #ff6b6b 0%, #f06595 100%);
+            color: #ffffff;
+            text-align: center;
+            border-bottom: 1px solid #f2f2f2;
+        }
+
+        .card-details {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            color: #ffffff;
+            opacity: 0;
+            visibility: hidden;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            font-size: 16px;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+
+        .card:hover .card-details {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">🌟</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">🔥</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">🚀</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">🎉</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">🌈</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">💡</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">🌍</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">✨</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">🚁</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">🎨</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">🍎</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">🎶</div>
+            <div class="card-details">
+                <p>Details about this card</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
